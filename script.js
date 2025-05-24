@@ -1,4 +1,4 @@
-// 3D AC Animation (Three.js)
+// 3D AC Animation (Simple Box Demo)
 let scene = new THREE.Scene();
 let camera = new THREE.PerspectiveCamera(75, 350/300, 0.1, 1000);
 let renderer = new THREE.WebGLRenderer({canvas: document.getElementById('ac3d'), alpha: true, antialias: true});
@@ -115,3 +115,18 @@ function waTyping() {
   }
   type();
 }
+
+// WhatsApp Message Form Handler
+document.addEventListener('DOMContentLoaded', function() {
+  const waForm = document.getElementById('waMessageForm');
+  if (waForm) {
+    waForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = encodeURIComponent(document.getElementById('waName').value.trim());
+      const msg = encodeURIComponent(document.getElementById('waMsg').value.trim());
+      const waNumber = '918418944572'; // Your WhatsApp number with country code
+      const finalMsg = `Hello, my name is ${name}. ${msg}`;
+      window.open(`https://wa.me/${waNumber}?text=${finalMsg}`, '_blank');
+    });
+  }
+});

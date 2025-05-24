@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cooling Centre | Air Conditioning Experts</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Cooling Centre - Professional air conditioning installation, repair, and maintenance.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+  <div class="header-glow"></div>
+  <h1>Cooling Centre</h1>
+  <p>Professional Air Conditioning Installation, Repair & Maintenance</p>
+</header>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#stats">Stats</a>
+  <a href="#contact">Contact</a>
+</nav>
+<div class="container">
+
+  <!-- HERO SECTION WITH PARALLAX BACKGROUND -->
+  <section id="home" class="glass hero parallax-bg">
+    <div class="hero-content">
+      <h2>Stay Cool & Comfortable</h2>
+      <p>Expert air conditioning solutions for homes and businesses. Fast, reliable, and affordable service in your area.</p>
+      <a href="#" class="btn neon" onclick="openWAWidget()">Chat on WhatsApp</a>
+    </div>
+    <canvas id="ac3d"></canvas>
+  </section>
+
+  <!-- ABOUT US -->
+  <section id="about" class="glass">
+    <h2>About Cooling Centre</h2>
+    <p>
+      <strong>Cooling Centre</strong> is your one-stop solution for all air conditioning needs. With years of experience, we specialize in AC installation, repair, and maintenance for residential and commercial clients. Our skilled technicians ensure top-quality service, customer satisfaction, and cool comfort all year round.
+    </p>
+    <ul class="info-list">
+      <li><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> <span id="address">Near Janta Medical Store, Bijnor Road, Nagina, Uttar Pradesh, 246762</span></li>
+      <li><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:8418944572">8418944572</a></li>
+      <li><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/918418944572" target="_blank">Chat Now</a></li>
+      <li><i class="fas fa-globe"></i> <strong>Google Business:</strong> <a href="https://g.co/kgs/anP5FLA" target="_blank">View Profile</a></li>
+    </ul>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="glass">
+    <h2>Our Services</h2>
+    <div class="services-list">
+      <div class="service card-anim">
+        <i class="fas fa-tools"></i>
+        <h3>AC Installation</h3>
+        <p>Expert installation of all major air conditioner brands for homes and offices.</p>
+      </div>
+      <div class="service card-anim">
+        <i class="fas fa-wrench"></i>
+        <h3>AC Repair</h3>
+        <p>Quick and reliable repair for all AC types. We fix cooling issues, leaks, and more.</p>
+      </div>
+      <div class="service card-anim">
+        <i class="fas fa-sync-alt"></i>
+        <h3>AC Maintenance</h3>
+        <p>Regular servicing to keep your AC running efficiently and extend its lifespan.</p>
+      </div>
+      <div class="service card-anim">
+        <i class="fas fa-building"></i>
+        <h3>Commercial Cooling</h3>
+        <p>Customized cooling solutions for shops, offices, and commercial spaces.</p>
+      </div>
+      <div class="service card-anim">
+        <i class="fas fa-bolt"></i>
+        <h3>Emergency Services</h3>
+        <p>24/7 emergency AC repair and support for urgent cooling needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section id="stats" class="glass stats">
+    <h2>Why Choose Us?</h2>
+    <div class="stats-list">
+      <div class="stat">
+        <div class="stat-number" data-target="12">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="250">0</div>
+        <div class="stat-label">Successful Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="200">0</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="glass">
+    <h2>Contact Us</h2>
+    <ul class="info-list">
+      <li><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> <span id="address2">Near Janta Medical Store, Bijnor Road, Nagina, Uttar Pradesh, 246762</span></li>
+      <li><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:8418944572">8418944572</a></li>
+      <li><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/918418944572" target="_blank">Message Us</a></li>
+      <li><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:coolingcentre9211@gmail.com">coolingcentre9211@gmail.com</a></li>
+    </ul>
+    <form class="contact-form" action="mailto:coolingcentre9211@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <textarea name="message" rows="3" placeholder="How can we help you?" required></textarea>
+      <button class="btn neon" type="submit">Send Message</button>
+    </form>
+    <iframe class="map" src="https://www.google.com/maps?q=Near+Janta+Medical+Store,+Bijnor+Road,+Nagina,+Uttar+Pradesh,+246762&output=embed"></iframe>
+  </section>
+</div>
+
+<!-- WhatsApp Widget -->
+<div id="wa-widget">
+  <div class="wa-chatbox" id="wa-chatbox">
+    <span class="wa-close" onclick="closeWAWidget()">&times;</span>
+    <h4><i class="fab fa-whatsapp"></i> Chat with Cooling Centre</h4>
+    <div id="wa-typing"></div>
+    <a href="https://wa.me/918418944572?text=Hi%20Cooling%20Centre%2C%20I%20need%20help%20with%20my%20AC!" class="btn neon" target="_blank">
+      <i class="fab fa-whatsapp"></i> Start WhatsApp Chat
+    </a>
+  </div>
+  <div class="wa-bubble" onclick="toggleWAWidget()" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Cooling Centre. All rights reserved.
+</footer>
+
+<!-- THREE.JS for 3D Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

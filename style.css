@@ -437,3 +437,13 @@ footer {
   nav { gap: 1rem; font-size: 1rem;}
   .wa-chatbox { width: 90vw; }
 }
+.service-tall {
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.service-tall .service-img {
+  height: 220px;
+}
+

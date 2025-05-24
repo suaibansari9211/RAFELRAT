@@ -143,16 +143,18 @@ nav a:hover:after {
   background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
   color: #fff;
   border: none;
-  padding: 0.8rem 2.2rem;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  font-weight: 700;
+  padding: 0.5rem 1.2rem;
+  border-radius: 22px;
+  font-size: 0.98rem;
+  font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 16px #00c6fb33;
+  box-shadow: 0 2px 8px #00c6fb33;
   transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
   letter-spacing: 1px;
   text-decoration: none;
   display: inline-block;
+  min-width: 0;
+  margin-bottom: 0.2em;
 }
 .btn:hover {
   background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
@@ -162,7 +164,11 @@ nav a:hover:after {
 .neon {
   box-shadow: var(--neon);
   text-shadow: 0 0 8px #00c6fb, 0 0 16px #005bea;
-  border: 2px solid #00c6fb77;
+  border: 1.5px solid #00c6fb77;
+}
+.service-actions .btn.neon i {
+  font-size: 1.1em;
+  margin-right: 0.4em;
 }
 #ac3d {
   width: 350px;
@@ -387,6 +393,35 @@ footer {
   border-top-right-radius: 16px;
   font-size: 1.1rem;
   box-shadow: 0 -2px 12px #005bea33;
+}
+.send-message-tile {
+  background: var(--glass);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #005bea22;
+  padding: 1.5em 1.2em;
+  margin: 2em 0 1em 0;
+  max-width: 400px;
+}
+.send-message-tile h3 {
+  margin-top: 0;
+  color: var(--secondary);
+  font-size: 1.3em;
+  margin-bottom: 0.7em;
+}
+#waMessageForm input,
+#waMessageForm textarea {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.7em;
+  border-radius: 10px;
+  border: 1px solid #cfdef3;
+  font-size: 1em;
+  background: #f7fafd;
+  resize: none;
+}
+#waMessageForm button {
+  width: 100%;
+  font-size: 1.05em;
 }
 @media (max-width: 900px) {
   .hero { flex-direction: column; align-items: center;}
